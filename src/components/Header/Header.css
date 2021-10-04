@@ -1,0 +1,9 @@
+.heading {
+    color:crimson;
+}
+.navigation {
+    background-color: rgba(169, 169, 169, 0.746);
+}
+.btn-nav {
+    background-image: linear-gradient(rgb(216, 128, 145),rgb(209, 44, 77));
+}
