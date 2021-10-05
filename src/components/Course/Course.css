@@ -2,9 +2,12 @@
     background-image: linear-gradient(rgb(243, 232, 217), rgb(207, 184, 154) );
 }
 .course-img {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 400px;
 }
 .course-name {
     color: rgb(206, 65, 13);
+}
+.star-color {
+    color: rgb(155, 136, 32);
 }

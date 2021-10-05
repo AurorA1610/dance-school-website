@@ -1,3 +1,10 @@
+.header {
+    background-image: linear-gradient(rgb(235, 210, 171), rgb(238, 238, 175));
+}
+.logo {
+    height: 400px;
+    width: 500px;
+}
 .heading {
     color:crimson;
 }

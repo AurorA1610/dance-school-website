@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import './Instructors.css';
 
 const Instructors = () => {
     const [instructors, setInstructors] = useState([]);
@@ -9,16 +10,16 @@ const Instructors = () => {
         fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data => setInstructors(data));
     }, [])
     return (
-        <div>S
+        <div>
             <Header></Header>
-            <h3 className="mb-5 text-success">Meet Our Instructors</h3>
-            <Row xs={1} md={3} className="g-4">
+            <h1 className="mb-5 heading">Our Instructors</h1>
+            <Row xs={1} md={2} className="g-4">
             {
                 instructors.map(instructor => 
-                    <div>
+                    <Col className="instructor border border-2 p-4 rounded-pill">
                         <h4>{instructor.name}</h4>
-                        <h6>{instructor.phone}</h6>
-                    </div>
+                        <h6>phone: {instructor.phone}</h6>
+                    </Col>
                 )
             }
             </Row>
